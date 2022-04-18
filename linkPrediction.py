@@ -1,3 +1,5 @@
+import pandas as pd
+
 def df_metrics_per_seed(models, trains_flow, tests_flow, seeds):
 
     train_loss, train_acc = [], []
