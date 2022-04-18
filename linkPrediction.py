@@ -221,7 +221,7 @@ def gcn_function(SG, seed=42, epochs=50, show_metrics_untrained=False, show_metr
     )
 
     if show_history == True:
-    print(sg.utils.plot_history(history))
+        print(sg.utils.plot_history(history))
 
     train_metrics = model.evaluate(train_flow)
     test_metrics = model.evaluate(test_flow)
