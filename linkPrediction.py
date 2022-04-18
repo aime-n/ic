@@ -1,4 +1,20 @@
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from tqdm import tqdm
+
+import stellargraph as sg
+from stellargraph.data import EdgeSplitter
+from stellargraph.mapper import FullBatchLinkGenerator
+from stellargraph.layer import GCN, LinkEmbedding
+
+from tensorflow import keras
+from sklearn import preprocessing, feature_extraction, model_selection
+
+import networkx as nx
+
+
+
 
 def df_metrics_per_seed(models, trains_flow, tests_flow, seeds):
 
@@ -56,7 +72,7 @@ def gcn_seeds_metrics_and_plots(G, seeds, test_keep_connected=True):
     print(df)
     print(df.mean())
 
-    plot_metrics_all_seeds(df_gcc, seeds)
+    plot_metrics_all_seeds(df, seeds)
 
 def plot_history_all_seeds(hist):
     fig, axs = plt.subplots(2,2, figsize=(12,10))
