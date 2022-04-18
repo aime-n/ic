@@ -3,15 +3,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 
-import stellargraph as sg
-from stellargraph.data import EdgeSplitter
-from stellargraph.mapper import FullBatchLinkGenerator
-from stellargraph.layer import GCN, LinkEmbedding
-
-from tensorflow import keras
-from sklearn import preprocessing, feature_extraction, model_selection
-
-import networkx as nx
+# import stellargraph as sg
+# from stellargraph.data import EdgeSplitter
+# from stellargraph.mapper import FullBatchLinkGenerator
+# from stellargraph.layer import GCN, LinkEmbedding
+#
+# from tensorflow import keras
+# from sklearn import preprocessing, feature_extraction, model_selection
+#
+# import networkx as nx
 
 
 
