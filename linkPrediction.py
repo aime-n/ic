@@ -143,13 +143,13 @@ def edges_to_df(KG, rel='relation'):
 
     source, target, relation = [], [], []
     for edge in KG.edges(data=True):
-    source.append(edge[0])
-    target.append(edge[1])
-    relation.append(edge[2][rel])
+        source.append(edge[0])
+        target.append(edge[1])
+        relation.append(edge[2][rel])
 
-    df_edges_linguistic['source'] = source
-    df_edges_linguistic['relation'] = relation
-    df_edges_linguistic['target'] = target
+        df_edges_linguistic['source'] = source
+        df_edges_linguistic['relation'] = relation
+        df_edges_linguistic['target'] = target
 
     return df_edges_linguistic
 
